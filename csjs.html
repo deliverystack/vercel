@@ -4,9 +4,18 @@
   </head>
   <body>
     <script type="text/javascript">
-
-alert(window.location.pathname);
-      console.log(window.location.pathname);
+      
+const Stack = Contentstack.Stack("blt1119a67aaafee1ed", "cseddda78a6479089cf7616636", "contentdelivery");  
+const Query = Stack.ContentType('page').Query();
+Query
+   .where("url", window.location.pathname)
+   .toJSON()
+   .find()
+   .then(function success(result) {
+      console.log(result[0]);
+  }, function error(err) {
+      console.log(err);
+ });      
 
     </script>
   </body>
