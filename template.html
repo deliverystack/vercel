@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css"> 
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ84G1V290"></script>
+    <script>
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FJ84G1V290');
+
+  </script>
+</head>
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="page-layout"> 
+        <header>
+            <h1>{{ header_title }}</h1>
+        </header>
+        
+        <nav>
+            {{ nav_html }}
+
+            <form method="get" action="https://www.google.com/search">
+              <input type="hidden" name="q" value="site:jpw3.com">
+              &nbsp;&nbsp;<input type="text" name="q" placeholder="Search jpw3.com" style="width: 100px;">
+              <input type="submit" value="Search">
+            </form>
+        </nav>
+        
+        <main>
+            {{ content }}
+        </main>
+        
+        <footer>
+            <p>Source: <code>{{ source_path }}</code> | Last modified: {{ last_modified }}</p>
+        </footer>
+    </div>
+</body>
+</html>
