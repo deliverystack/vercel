@@ -144,6 +144,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     &lt;input type=&quot;submit&quot; value=&quot;Search&quot;&gt;
 &lt;/form&gt;
 </code></pre>
+<p>I added sitemap.xml generation:</p>
+<ul>
+<li><strong><code>include_in_sitemap</code></strong>: True or false.</li>
+<li><strong><code>sitemap_changefreq</code></strong>: <code>always</code>, <code>hourly</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code> (the default), <code>yearly</code>, or <code>never</code>.</li>
+<li><strong><code>sitemap_priority</code></strong>: Decimal value between <code>0</code> and <code>1</code>, default <code>0.5</code>.</li>
+</ul>
+<p>In the interest of saving storage space, I wrote a <code>sh</code> script to truncate history for generated HTML files:</p>
+<pre><code class="language-sh">cd /home/jw/git/vercel
+git checkout --orphan latest_branch
+git add -A
+git commit -am &quot;history of generated files truncated to save storage space&quot;
+git branch -D main
+git branch -m main
+git push -f origin main
+</code></pre>
 <h3>Comments</h3>
 <p>Feel free to comment here:</p>
 <ul>
@@ -156,14 +171,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   &quot;avoid_generation&quot;: false,
   &quot;exclude_from_nav&quot;: false,
   &quot;keep_json_in_content&quot;: true,
-  &quot;sort_key&quot;: &quot;ABC&quot;
+  &quot;sort_key&quot;: &quot;ABC&quot;,
+  &quot;include_in_sitemap&quot;: true,
+  &quot;sitemap_changefreq&quot;: &quot;yearly&quot;,
+  &quot;sitemap_priority&quot;: 0.5
 }
 </code></pre>
 
         </main>
         
         <footer>
-            <p>Source: <code>/articles/2025/December/static-site.md</code> | Last modified: 2025-12-13</p>
+            <p>Source: <code>/articles/2025/December/static-site.md</code> | Last modified: 2025-12-14</p>
         </footer>
     </div>
 </body>
