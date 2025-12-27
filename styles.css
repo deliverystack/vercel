@@ -1,0 +1,198 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+  font-size: 18px !important; 
+  line-height: 1.6 !important; 
+}
+
+pre, code {
+  font-family: SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace !important;
+  font-size: 0.95em !important; 
+}
+
+pre {
+  background-color: #f4f4f4 !important;
+  padding: 15px !important; 
+  border-radius: 5px !important; 
+  overflow-x: auto !important;
+
+  white-space: pre-wrap !important; 
+  word-wrap: break-word !important; 
+  overflow-wrap: break-word !important; 
+  word-break: break-all !important; 
+}
+
+/* 4. BLOCKQUOTE STYLING: Bold and Italic */
+blockquote {
+    font-weight: bold !important;
+    font-style: italic !important;
+}
+
+
+/*
+ * ====================================================================
+ * B. BASE SETUP AND GRID DEFINITION (MAXIMUM PRIORITY)
+ * ====================================================================
+ */
+
+#page-layout {
+  grid-template-columns: max-content 1fr !important;
+  display: grid !important; 
+  grid-template-rows: auto 1fr auto !important; 
+  grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer" !important; 
+
+  gap: 20px !important; 
+  min-height: 100vh !important; 
+  margin: 0 auto !important;    
+  max-width: 1400px !important; 
+  
+  border: 1px solid black !important;
+}
+
+/*
+ * ====================================================================
+ * C. PLACEMENT AND VISIBILITY STYLES
+ * ====================================================================
+ */
+
+header {
+  grid-area: header !important;
+  background: #2c3e50 !important;
+  color: white !important;
+  padding: 10px 20px !important;
+}
+
+header h1 {
+  margin: 0 !important;
+  font-size: 1.5em !important;
+  display: inline !important;
+  margin-right: 15px !important;
+}
+
+header *,
+header nav,
+header div,
+header span,
+header a {
+  color: white !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline !important;
+}
+
+main {
+  grid-area: main !important; 
+  background: white !important;
+  padding: 20px !important;
+}
+
+aside {
+  display: none !important; 
+}
+
+footer {
+  grid-area: footer !important;
+  background: #34495e !important;
+  color: white !important;
+  padding: 15px !important;
+  text-align: center !important;
+}
+
+nav {
+  grid-area: nav !important; 
+  background: #ecf0f1 !important;
+  padding: 20px 20px 20px 0 !important; 
+  min-height: 200px !important; 
+}
+
+/*
+ * ====================================================================
+ * D. NAVIGATION LIST STYLES (Indentation Fix)
+ * ====================================================================
+ */
+
+nav ul {
+  list-style-type: none !important; 
+  margin: 0 !important;
+  padding-left: 0 !important; 
+}
+
+nav li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+nav > ul {
+    padding-left: 0 !important;
+}
+
+nav li ul {
+  padding-left: 10px !important; 
+  margin-top: 0 !important; 
+  margin-bottom: 0 !important;
+}
+
+nav summary {
+  margin: 0 !important;
+}
+
+.nav-separator {
+    height: 10px !important; 
+    list-style-type: none !important;
+    border-top: 1px solid #c0c0c0 !important; 
+    margin: 5px 0 !important; 
+    padding: 0 !important; 
+}
+
+nav li > .nav-link,
+nav li.current-file {
+    padding-left: 10px !important;
+    display: inline-block !important; 
+}
+
+/*
+ * ====================================================================
+ * E. MEDIA QUERIES (Mobile Layout)
+ * ====================================================================
+ */
+
+@media (max-width: 768px) {
+  #page-layout { 
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer" !important; 
+
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important; 
+    gap: 10px !important;
+  }
+
+  nav {
+    padding: 15px !important; 
+  }
+}
+
+/*
+ * ====================================================================
+ * F. MISCELLANEOUS
+ * ====================================================================
+ */
+
+th {
+  text-align: left !important;
+  vertical-align: top !important; 
+}
+
+main img {
+  max-width: 600px !important; 
+  height: auto !important;
+  display: block !important; 
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
