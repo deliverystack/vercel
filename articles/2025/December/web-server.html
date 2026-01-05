@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="dns-prefetch" href="https://jpw3.com">
+    <link rel="preconnect" href="https://jpw3.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedora Linux Simple Static Web Server Startup</title>
+    <link rel="stylesheet" href="/styles.css"> 
+    <link rel="canonical" href="https://jpw3.com/articles/2025/December/web-server.html">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ84G1V290"></script>
+    <script>
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FJ84G1V290');
+
+  </script>
+</head>
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="page-layout"> 
+        <header>
+            <h1>Fedora Linux Simple Static Web Server Startup</h1>
+            <nav class="breadcrumb"><a href="/">jpw3.com</a> › <a href="/articles/">Articles</a> › <a href="/articles/2025/">2025</a> › <a href="/articles/2025/December/">December</a> › <span class="breadcrumb-current">Fedora Web Server Startup</span></nav>
+        </header>
+
+        <nav data-nosnippet>
+            <ul><li class="current-branch"><details open><summary><a href="../../index.html">Articles</a></summary><ul><li><details><summary><a href="../../2013/index.html">2013</a></summary></details></li><li><details><summary><a href="../../2020/index.html">2020</a></summary></details></li><li><details><summary><a href="../../2021/index.html">2021</a></summary></details></li><li><details><summary><a href="../../2024/index.html">2024</a></summary></details></li><li class="current-branch"><details open><summary><a href="../index.html">2025</a></summary><ul><li class="current-branch"><details open><summary><a href="index.html">December</a></summary><ul><li><a class="nav-link" href="ai-cheatsheet.html" title="articles/2025/December/ai-cheatsheet.md">AI Cheat Sheet</a></li><li><a class="nav-link" href="avoid-types.html" title="articles/2025/December/avoid-types.md">Avoid Types</a></li><li><a class="nav-link" href="bash-hist.html" title="articles/2025/December/bash-hist.md">BASH History</a></li><li><a class="nav-link" href="xclip.html" title="articles/2025/December/xclip.md">Capture to Clipboard</a></li><li><a class="nav-link" href="catholocism-origins.html" title="articles/2025/December/catholocism-origins.md">Catholicism Origin</a></li><li><a class="nav-link" href="static-site.html" title="articles/2025/December/static-site.md">Cheapest CMS</a></li><li><a class="nav-link" href="consumption-recommendations.html" title="articles/2025/December/consumption-recommendations.md">Consumption</a></li><li><a class="nav-link" href="my-ego.html" title="articles/2025/December/my-ego.md">Ego Struggle</a></li><li><a class="nav-link" href="evil-institutions.html" title="articles/2025/December/evil-institutions.md">Evil Is Institutional</a></li><li><a class="nav-link" href="fedora-shortcuts.html" title="articles/2025/December/fedora-shortcuts.md">Fedora Shortcuts</a></li><li class="current-file" title="articles/2025/December/web-server.md">Fedora Web Server Startup</li><li><a class="nav-link" href="format-linkedin.html" title="articles/2025/December/format-linkedin.md">Format LinkedIn Content</a></li><li><a class="nav-link" href="gurdjieff-souls.html" title="articles/2025/December/gurdjieff-souls.md">Gurdjieff on Souls</a></li><li><a class="nav-link" href="markdown-cheatsheet.html" title="articles/2025/December/markdown-cheatsheet.md">Markdown Cheat Sheet</a></li><li><a class="nav-link" href="worst-mistakes.html" title="articles/2025/December/worst-mistakes.md">My Worst Mistakes</a></li><li><a class="nav-link" href="oscar-wilde.html" title="articles/2025/December/oscar-wilde.md">Oscar Wilde Quotes</a></li><li><a class="nav-link" href="relationship-person.html" title="articles/2025/December/relationship-person.md">Relationship/Person</a></li><li><a class="nav-link" href="fake-work.html" title="articles/2025/December/fake-work.md">Totalitarianism</a></li><li><a class="nav-link" href="tv-shows.html" title="articles/2025/December/tv-shows.md">TV Shows</a></li><li><a class="nav-link" href="us-border.html" title="articles/2025/December/us-border.md">US Border Prep</a></li><li><a class="nav-link" href="value-boredom.html" title="articles/2025/December/value-boredom.md">Value Boredom</a></li><li><a class="nav-link" href="vert-types.html" title="articles/2025/December/vert-types.md">Vert Types</a></li><li><a class="nav-link" href="wealth-power.html" title="articles/2025/December/wealth-power.md">Wealth and Power</a></li></ul></details></li><li><details><summary><a href="../November/index.html">November</a></summary></details></li><li><details><summary><a href="../October/index.html">October</a></summary></details></li><li><details><summary><a href="../May/index.html">May</a></summary></details></li><li><details><summary><a href="../February/index.html">February</a></summary></details></li></ul></details></li><li><details><summary><a href="../../psychology/index.html">Psychology</a></summary></details></li></ul></details></li><li><details ><summary><a href="../../../consciousness-stream/index.html">Mind Streams</a></summary><ul><li><details><summary><a href="../../../consciousness-stream/2025/index.html">2025</a></summary></details></li></ul></details></li><li><details ><summary><a href="../../../wip/index.html">WIP</a></summary><ul><li><a class="nav-link" href="../../../wip/ai-ldc.html" title="wip/ai-ldc.md">AI and LDCs</a></li><li><a class="nav-link" href="../../../wip/avoid-people.html" title="wip/avoid-people.md">Avoid People Who...</a></li><li><a class="nav-link" href="../../../wip/be-virtuous.html" title="wip/be-virtuous.md">Be Virtuous</a></li><li><a class="nav-link" href="../../../wip/dos-donts.html" title="wip/dos-donts.md">Do's and Don'ts</a></li><li><a class="nav-link" href="../../../wip/general-guidance.html" title="wip/general-guidance.md">General Guidance</a></li><li><a class="nav-link" href="../../../wip/green-flags.html" title="wip/green-flags.md">Green Flags</a></li><li><a class="nav-link" href="../../../wip/tech-actions.html" title="wip/tech-actions.md">Healthy Tech Actions</a></li><li><a class="nav-link" href="../../../wip/mixed.html" title="wip/mixed.md">mixed</a></li><li><a class="nav-link" href="../../../wip/us-christianity.html" title="wip/us-christianity.md">US Christianity</a></li><li><a class="nav-link" href="../../../wip/whats-wrong.html" title="wip/whats-wrong.md">USA, What's Wrong?</a></li><li><a class="nav-link" href="../../../wip/watchlist.html" title="wip/watchlist.md">watchlist</a></li></ul></details></li><li class="nav-separator"></li><li><a class="nav-link" href="../../../index.html" title="index.md">jpw3.com</a></li><li><a class="nav-link" href="../../../bibliography.html" title="bibliography.md">Bibliography</a></li><li><a class="nav-link" href="../../../command-lines.html" title="command-lines.md">Command Lines</a></li><li><a class="nav-link" href="../../../projects.html" title="projects.md">Github Projects</a></li><li><a class="nav-link" href="../../../topics.html" title="topics.md">Topics</a></li></ul>
+
+            <form method="get" action="https://www.google.com/search">
+              <input type="hidden" name="q" value="site:jpw3.com">
+              &nbsp;&nbsp;<input type="text" name="q" placeholder="Search jpw3.com" style="width: 100px;">
+              <input type="submit" value="Search">
+            </form>
+        </nav>
+        
+        <main>
+            <h1>Fedora Linux Simple Static Web Server Startup</h1>
+<p><img src="../../images/2025/December/rustypython.jpg" alt="Rusty Python" /></p>
+<p>This blog post explains how you can configure a static file web server to start when Fedora Linux or a related distribution boots. That's Rusty Python, BTW, a rusty steampunk mixture of a crab (associated with Rust, which I use to generate HTML files) and a python (which runs the web server).</p>
+<p>Originally published to</p>
+<ul>
+<li><a href="https://deliverystack.net/2025/12/10/fedora-linux-simple-static-web-server-startup/" target="_blank" rel="noopener noreferrer">https://deliverystack.net/2025/12/10/fedora-linux-simple-static-web-server-startup/</a></li>
+</ul>
+<p>There's quite a bit of work left to do, including documentation, but google's gemini AI and I are working on a Rust program (jpw3gen) that generates static HTML files from the markdown files in my writing project (jpw3).</p>
+<ul>
+<li><a href="https://github.com/deliverystack/jpw3gen" target="_blank" rel="noopener noreferrer">https://github.com/deliverystack/jpw3gen</a></li>
+</ul>
+<p>The project includes a <code>sh</code> script to build the files and run or restart the web server, which is a python process. I want my system to run that web server automatically at startup, so I updated the script to just generate the files.</p>
+<p>To manage the web server, gemini recommended the following approach that &quot;allows your script to be managed like any other system service, providing features like automatic start on boot, logging, and automatic restart on failure.&quot;</p>
+<p>This is the command line that I need to invoke, running the web server on port 8080 with /home/jw/tmp/jpw3 as the document root:</p>
+<pre><code>python3 -m http.server 8000 --directory /home/jw/tmp/jpw3
+</code></pre>
+<p>First, create a file in the <code>/etc/systemd/system/</code> directory. Creating this should require root privileges. Name the file something descriptive with the <code>.service</code> extension. The name <code>jpw3.service</code> seems good enough to me. Here's a template:</p>
+<pre><code>[Unit]
+Description=&lt;A short description of your program&gt;
+After=network.target
+
+[Service]
+# Use 'simple' for long-running processes that don't fork (like a typical Python script)
+Type=simple 
+
+# Optional but highly recommended: specify the user to run the script as
+# Replace &lt;your_username&gt; with a non-root user (or a dedicated service user)
+User=&lt;your_username&gt; 
+
+# Optional: sets the directory the script runs in (useful for relative paths)
+# WorkingDirectory=/path/to/script/folder 
+
+# The command to execute: use the absolute path to python and your script
+# If using a virtual environment (recommended), the path will be different:
+# ExecStart=/path/to/venv/bin/python /path/to/your/script.py
+ExecStart=/usr/bin/python3 /path/to/your/script.py
+
+# Optional: Automatically restart the service if it exits unexpectedly
+Restart=on-failure
+
+# Optional: Wait 5 seconds before attempting a restart
+RestartSec=5
+
+# Optional: Helps to see output immediately in journalctl, not buffered
+Environment=&quot;PYTHONUNBUFFERED=1&quot; 
+
+[Install]
+# This specifies when the service should be started during boot
+WantedBy=multi-user.target
+</code></pre>
+<p>My requirements are pretty simple:</p>
+<ul>
+<li>I don't really care when it starts as long as it's running by the time I have logged in.</li>
+<li>I won't create or use a different user for the service.</li>
+<li>I want to specify the document root on the command line instead of setting it as a working directory for the process.</li>
+<li>I want to be able to kill the web server; I don't want it to restart automatically.</li>
+</ul>
+<p>This is my actual implementation:</p>
+<pre><code># /etc/systemd/system/jpw3.service
+
+[Unit]
+Description=jpw3 static file web server
+After=network.target
+
+[Service]
+Type=simple 
+User=jw 
+ExecStart=/usr/bin/python3 -m http.server 8000 --directory /home/jw/tmp/jpw3
+Environment=&quot;PYTHONUNBUFFERED=1&quot; 
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>After writing the file, use the <code>systemctl</code> command to work with the service. You can cause the daemon to refresh its configuration:</p>
+<pre><code>sudo systemctl daemon-reload
+</code></pre>
+<p>To enable the service:</p>
+<pre><code>sudo systemctl enable jpw3.service
+</code></pre>
+<p>To start the service:</p>
+<pre><code>sudo systemctl start jpw3.service
+</code></pre>
+<p>You can check the status and get information about the service:</p>
+<pre><code>sudo systemctl status jpw3.service
+</code></pre>
+<p>You can use the <code>journalctl</code> command to view the service's logs. This appears to function something like bringing that process into the foreground, so you see the output it would have written to the console, but <code>CTRL</code>+<code>C</code> kills <code>journalctl</code> rather than killing the service:</p>
+<pre><code>sudo journalctl -u jpw3.service -f
+</code></pre>
+<p>You may want to reboot and confirm the web comes up. </p>
+<p>Access the web server:</p>
+<ul>
+<li><a href="http://localhost:8000" target="_blank" rel="noopener noreferrer">http://localhost:8000</a></li>
+</ul>
+<p>Change a file and ensure that refreshing the browser renders the updated data.</p>
+<p>This may not be the safest way, but effectively kills the web server:</p>
+<pre><code>kill $(lsof -t -i :8000) 2&gt; /dev/null
+</code></pre>
+<p>A better way:</p>
+<pre><code>sudo systemctl stop jpw3.service
+</code></pre>
+<p>Or to restart it:</p>
+<pre><code>sudo systemctl restart jpw3.service
+</code></pre>
+<h3>Comments</h3>
+<p>Any comments go here:</p>
+<ul>
+<li><a href="https://www.linkedin.com/posts/johnwest3_blogged-fedora-linux-simple-static-web-server-activity-7404469671233855489-9zrX" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/posts/johnwest3_blogged-fedora-linux-simple-static-web-server-activity-7404469671233855489-9zrX</a></li>
+</ul>
+
+        </main>
+        
+        <footer>
+            <p>Source: <code>/articles/2025/December/web-server.md</code> | Created : 2025-12-20 | Last modified: 2025-12-20</p>
+        </footer>
+    </div>
+</body>
+</html>

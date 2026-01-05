@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="dns-prefetch" href="https://jpw3.com">
+    <link rel="preconnect" href="https://jpw3.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Command Line Output to the Linux Clipboard</title>
+    <link rel="stylesheet" href="/styles.css"> 
+    <link rel="canonical" href="https://jpw3.com/articles/2025/December/xclip.html">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ84G1V290"></script>
+    <script>
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FJ84G1V290');
+
+  </script>
+</head>
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="page-layout"> 
+        <header>
+            <h1>Capture Command Line Output to the Linux Clipboard</h1>
+            <nav class="breadcrumb"><a href="/">jpw3.com</a> › <a href="/articles/">Articles</a> › <a href="/articles/2025/">2025</a> › <a href="/articles/2025/December/">December</a> › <span class="breadcrumb-current">Capture to Clipboard</span></nav>
+        </header>
+
+        <nav data-nosnippet>
+            <ul><li class="current-branch"><details open><summary><a href="../../index.html">Articles</a></summary><ul><li><details><summary><a href="../../2013/index.html">2013</a></summary></details></li><li><details><summary><a href="../../2020/index.html">2020</a></summary></details></li><li><details><summary><a href="../../2021/index.html">2021</a></summary></details></li><li><details><summary><a href="../../2024/index.html">2024</a></summary></details></li><li class="current-branch"><details open><summary><a href="../index.html">2025</a></summary><ul><li class="current-branch"><details open><summary><a href="index.html">December</a></summary><ul><li><a class="nav-link" href="ai-cheatsheet.html" title="articles/2025/December/ai-cheatsheet.md">AI Cheat Sheet</a></li><li><a class="nav-link" href="avoid-types.html" title="articles/2025/December/avoid-types.md">Avoid Types</a></li><li><a class="nav-link" href="bash-hist.html" title="articles/2025/December/bash-hist.md">BASH History</a></li><li class="current-file" title="articles/2025/December/xclip.md">Capture to Clipboard</li><li><a class="nav-link" href="catholocism-origins.html" title="articles/2025/December/catholocism-origins.md">Catholicism Origin</a></li><li><a class="nav-link" href="static-site.html" title="articles/2025/December/static-site.md">Cheapest CMS</a></li><li><a class="nav-link" href="consumption-recommendations.html" title="articles/2025/December/consumption-recommendations.md">Consumption</a></li><li><a class="nav-link" href="my-ego.html" title="articles/2025/December/my-ego.md">Ego Struggle</a></li><li><a class="nav-link" href="evil-institutions.html" title="articles/2025/December/evil-institutions.md">Evil Is Institutional</a></li><li><a class="nav-link" href="fedora-shortcuts.html" title="articles/2025/December/fedora-shortcuts.md">Fedora Shortcuts</a></li><li><a class="nav-link" href="web-server.html" title="articles/2025/December/web-server.md">Fedora Web Server Startup</a></li><li><a class="nav-link" href="format-linkedin.html" title="articles/2025/December/format-linkedin.md">Format LinkedIn Content</a></li><li><a class="nav-link" href="gurdjieff-souls.html" title="articles/2025/December/gurdjieff-souls.md">Gurdjieff on Souls</a></li><li><a class="nav-link" href="markdown-cheatsheet.html" title="articles/2025/December/markdown-cheatsheet.md">Markdown Cheat Sheet</a></li><li><a class="nav-link" href="worst-mistakes.html" title="articles/2025/December/worst-mistakes.md">My Worst Mistakes</a></li><li><a class="nav-link" href="oscar-wilde.html" title="articles/2025/December/oscar-wilde.md">Oscar Wilde Quotes</a></li><li><a class="nav-link" href="relationship-person.html" title="articles/2025/December/relationship-person.md">Relationship/Person</a></li><li><a class="nav-link" href="fake-work.html" title="articles/2025/December/fake-work.md">Totalitarianism</a></li><li><a class="nav-link" href="tv-shows.html" title="articles/2025/December/tv-shows.md">TV Shows</a></li><li><a class="nav-link" href="us-border.html" title="articles/2025/December/us-border.md">US Border Prep</a></li><li><a class="nav-link" href="value-boredom.html" title="articles/2025/December/value-boredom.md">Value Boredom</a></li><li><a class="nav-link" href="vert-types.html" title="articles/2025/December/vert-types.md">Vert Types</a></li><li><a class="nav-link" href="wealth-power.html" title="articles/2025/December/wealth-power.md">Wealth and Power</a></li></ul></details></li><li><details><summary><a href="../November/index.html">November</a></summary></details></li><li><details><summary><a href="../October/index.html">October</a></summary></details></li><li><details><summary><a href="../May/index.html">May</a></summary></details></li><li><details><summary><a href="../February/index.html">February</a></summary></details></li></ul></details></li><li><details><summary><a href="../../psychology/index.html">Psychology</a></summary></details></li></ul></details></li><li><details ><summary><a href="../../../consciousness-stream/index.html">Mind Streams</a></summary><ul><li><details><summary><a href="../../../consciousness-stream/2025/index.html">2025</a></summary></details></li></ul></details></li><li><details ><summary><a href="../../../wip/index.html">WIP</a></summary><ul><li><a class="nav-link" href="../../../wip/ai-ldc.html" title="wip/ai-ldc.md">AI and LDCs</a></li><li><a class="nav-link" href="../../../wip/avoid-people.html" title="wip/avoid-people.md">Avoid People Who...</a></li><li><a class="nav-link" href="../../../wip/be-virtuous.html" title="wip/be-virtuous.md">Be Virtuous</a></li><li><a class="nav-link" href="../../../wip/dos-donts.html" title="wip/dos-donts.md">Do's and Don'ts</a></li><li><a class="nav-link" href="../../../wip/general-guidance.html" title="wip/general-guidance.md">General Guidance</a></li><li><a class="nav-link" href="../../../wip/green-flags.html" title="wip/green-flags.md">Green Flags</a></li><li><a class="nav-link" href="../../../wip/tech-actions.html" title="wip/tech-actions.md">Healthy Tech Actions</a></li><li><a class="nav-link" href="../../../wip/mixed.html" title="wip/mixed.md">mixed</a></li><li><a class="nav-link" href="../../../wip/us-christianity.html" title="wip/us-christianity.md">US Christianity</a></li><li><a class="nav-link" href="../../../wip/whats-wrong.html" title="wip/whats-wrong.md">USA, What's Wrong?</a></li><li><a class="nav-link" href="../../../wip/watchlist.html" title="wip/watchlist.md">watchlist</a></li></ul></details></li><li class="nav-separator"></li><li><a class="nav-link" href="../../../index.html" title="index.md">jpw3.com</a></li><li><a class="nav-link" href="../../../bibliography.html" title="bibliography.md">Bibliography</a></li><li><a class="nav-link" href="../../../command-lines.html" title="command-lines.md">Command Lines</a></li><li><a class="nav-link" href="../../../projects.html" title="projects.md">Github Projects</a></li><li><a class="nav-link" href="../../../topics.html" title="topics.md">Topics</a></li></ul>
+
+            <form method="get" action="https://www.google.com/search">
+              <input type="hidden" name="q" value="site:jpw3.com">
+              &nbsp;&nbsp;<input type="text" name="q" placeholder="Search jpw3.com" style="width: 100px;">
+              <input type="submit" value="Search">
+            </form>
+        </nav>
+        
+        <main>
+            <p><img src="../../images/2025/December/xclip.png" alt="Vert Types" /></p>
+<h1>Capture Command Line Output to the Linux Clipboard</h1>
+<p>This blog post explains how to use the <code>xclip</code> command line tool to pipe output from a command line into the Linux clipboard, equivalent to the <code>clip.exe</code> command on Windows. Apparently, there are a few options to do this, but nothing standard in Linux itself, so you may want to research before committing to this approach.</p>
+<p>Originally published to:</p>
+<ul>
+<li><a href="https://deliverystack.net/2025/12/05/capture-command-line-output-to-the-linux-clipboard/" target="_blank" rel="noopener noreferrer">https://deliverystack.net/2025/12/05/capture-command-line-output-to-the-linux-clipboard/</a></li>
+</ul>
+<p>I didn't install <code>xclip</code> - Fedora installed it when I tried to call it the first time. Installation instructions vary by Linux distribution. The installation command for Fedora would be:</p>
+<pre><code>sudo dnf install xclip
+</code></pre>
+<p>Next, I would define two aliases and a function, potentially in <code>~/.bashrc</code>: one alias for consuming to the clipboard, one for pasting from the clipboard, and a function to run a command,  consume both <code>stderr</code> and <code>stdout</code> to the clipboard, and also write that content to the output stream.</p>
+<pre><code>alias cclip='xclip -selection clipboard'
+alias pclip='xclip -selection clipboard -o'
+tclip () {
+&quot;$@&quot; 2&gt;&amp;1 | tee &gt;(xclip -selection clipboard)
+}
+</code></pre>
+<p>Now you can use cclip to pipe command line output into the clipboard and pclip to output the clipboard to the command line. </p>
+<pre><code>echo hello | cclip     # capture stdout to clipboard
+pclip                  # render from clipboard
+</code></pre>
+<p>To capture <code>stderr</code> as well, add <code>2&gt;&amp;1</code> before the pipe (<code>|</code>): </p>
+<pre><code>bruh 2&gt;&amp;1 | cclip      # capture stdout and stderr to clipboard
+pclip                  # render from clipboard
+</code></pre>
+<p>You can use <code>tclip</code> to run the command, capture its output, and see that output (minus the color coding, unfortunately). But why would anyone want do do that, right? ;-)</p>
+<pre><code>tclip cargo build      # capture and output stdout and stderr 
+</code></pre>
+<h3>Comments</h3>
+<p>You can comment here:</p>
+<ul>
+<li><a href="https://www.linkedin.com/posts/johnwest3_blogged-capture-command-line-output-to-the-activity-7402958642922242048-T1dj" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/posts/johnwest3_blogged-capture-command-line-output-to-the-activity-7402958642922242048-T1dj</a></li>
+</ul>
+
+        </main>
+        
+        <footer>
+            <p>Source: <code>/articles/2025/December/xclip.md</code> | Created : 2025-12-20 | Last modified: 2025-12-20</p>
+        </footer>
+    </div>
+</body>
+</html>
